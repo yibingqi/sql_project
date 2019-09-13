@@ -110,7 +110,7 @@ CREATE PROCEDURE gen_salary_histogram
   END@
 ```
 Implement the same function with User Defined Function in PL/SQL  
-'''sql
+```sql
 /*
 CREATE FUNCTION EMPLOYEESAL (start1 INT, end1 INT, num1 INT)
      RETURNS TABLE (binnum INTEGER, 
