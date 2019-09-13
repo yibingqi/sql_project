@@ -109,7 +109,7 @@ CREATE PROCEDURE gen_salary_histogram
                            ORDER BY 1;            
   END@
 ```
-Implement the same function with User Defined Function in PL/SQL
+Implement the same function with User Defined Function in PL/SQL  
 '''sql
 /*
 CREATE FUNCTION EMPLOYEESAL (start1 INT, end1 INT, num1 INT)
@@ -139,9 +139,8 @@ CREATE FUNCTION EMPLOYEESAL (start1 INT, end1 INT, num1 INT)
              ORDER BY s2.row1)
 
 */
-
 SELECT * FROM TABLE (EMPLOYEESAL(30000, 170000, 7)) LIMIT 7;
-'''
+```
 ### 3.Analysis of Starbucks in US with spatial queries  
 Based on 2 spatial datasets: the first dataset is the list of Starbucks in US including location information (longitude, latitude), the second dataset is a shapefile that has a multipolygon object to represent the boundary of each county.   
 Write spatial query to find some statistics of interest about those data, i.e., find which county has most Starbucks stores, find the nearest Starbucks to one location.  
